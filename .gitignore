@@ -1,0 +1,7 @@
+node_modules
+package-lock.json
+
+.env
+
+flipkart-clone/node_modules
+flipkart-clone/package-lock.json
