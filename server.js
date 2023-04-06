@@ -23,9 +23,6 @@ const URL =
   process.env.MONGODB_URI ||
   `mongodb://${UserName}:${PassWord}@ac-9ifmkng-shard-00-00.sgelfb1.mongodb.net:27017,ac-9ifmkng-shard-00-01.sgelfb1.mongodb.net:27017,ac-9ifmkng-shard-00-02.sgelfb1.mongodb.net:27017/?ssl=true&replicaSet=atlas-u7g0ms-shard-0&authSource=admin&retryWrites=true&w=majority`;
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("flipkart-clone/build"));
-}
 Connection(URL);
 
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
